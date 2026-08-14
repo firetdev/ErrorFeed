@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import type { Log } from '../types/log';
 import { getLogs, connectToLogStream } from '../api/logs';
 
-export default function useLogs() {
+export default function useLogs(): Log[] {
   const [logs, setLogs] = useState<Log[]>([]);
 
   useEffect(() => {

@@ -10,7 +10,7 @@ export default function LogMessage({ log }: LogMessageProps) {
       className="log-message"
       style={{ color: log.type === 'error' ? 'red' : log.type === 'warn' ? 'orange' : 'white' }}
     >
-      {`[${log.timestamp}] ${log.type}: ${log.message}`}
+      {`[${log.timestamp}] ${log.type.toUpperCase()}: ${log.message}`}
     </div>
   );
-};
+}

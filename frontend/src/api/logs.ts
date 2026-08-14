@@ -11,5 +11,5 @@ export async function getLogs(): Promise<Log[]> {
 }
 
 export function connectToLogStream(): WebSocket {
-  return new WebSocket('ws://localhost:3001');
+  return new WebSocket('ws://localhost:3000');
 }
