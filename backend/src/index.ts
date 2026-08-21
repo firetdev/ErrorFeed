@@ -5,7 +5,7 @@ import logsRouter from './routes/logs.js';
 import { initializeWebSocketServer } from './websocket/server.js';
 
 const app = express();
-//
+
 app.use(cors({
   origin: 'http://localhost:5173'
 }));
