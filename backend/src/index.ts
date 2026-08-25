@@ -3,7 +3,7 @@ import cors from 'cors';
 import { createServer } from 'http';
 import logsRouter from './routes/logs.js';
 import { initializeWebSocketServer } from './websocket/server.js';
-
+#
 const app = express();
 
 app.use(cors({
