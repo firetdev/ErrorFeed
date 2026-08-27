@@ -1,5 +1,6 @@
 import useLogs from './hooks/useLogs';
 import Terminal from './components/Terminal';
+import './App.css'
 
 function App() {
   const logs = useLogs();
